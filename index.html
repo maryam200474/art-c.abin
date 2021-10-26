@@ -11,6 +11,10 @@
    <link rel="stylesheet" href="style.css/style.css" class="">
 </head>
 <body>
+    <script>
+        exports.default = series(scssTask,jsTask,browserSyncServe,watchTask);
+        exports.build = series(scssTask, jsTask);
+    </script>
      <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,400&display=swap');
 
